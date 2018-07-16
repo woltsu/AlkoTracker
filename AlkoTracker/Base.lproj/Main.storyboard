@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlkoTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer2" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-B2-b5k">
+                                <rect key="frame" x="97.666666666666686" y="191.66666666666663" width="219" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="353" id="UzA-Dd-Nde"/>
+                                    <constraint firstAttribute="width" constant="219" id="jD9-M0-4hp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locating..." textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpJ-fi-gsz">
+                                <rect key="frame" x="0.0" y="36" width="414" height="30"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locating..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jec-oP-Uu0">
+                                <rect key="frame" x="0.0" y="74" width="414" height="20"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.88627450980392153" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jec-oP-Uu0" firstAttribute="top" secondItem="TpJ-fi-gsz" secondAttribute="bottom" constant="8" id="NLy-md-i0e"/>
+                            <constraint firstItem="jec-oP-Uu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PgI-e0-Uax"/>
+                            <constraint firstItem="jec-oP-Uu0" firstAttribute="top" secondItem="TpJ-fi-gsz" secondAttribute="bottom" constant="8" id="d9b-D1-1iq"/>
+                            <constraint firstItem="TpJ-fi-gsz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jhF-C2-QmI"/>
+                            <constraint firstItem="jec-oP-Uu0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mJi-5a-xh2"/>
+                            <constraint firstItem="cRL-B2-b5k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oOx-8V-zUM"/>
+                            <constraint firstItem="TpJ-fi-gsz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qak-KR-IUU"/>
+                            <constraint firstItem="TpJ-fi-gsz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tcm-eW-tS3"/>
+                            <constraint firstItem="cRL-B2-b5k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYs-KO-Eay"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="arrowImageView" destination="cRL-B2-b5k" id="duf-iK-Klv"/>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="K1l-Jl-Rn5"/>
+                        <outlet property="distanceTextView" destination="jec-oP-Uu0" id="vxa-FF-Qx8"/>
+                        <outlet property="targetTextView" destination="TpJ-fi-gsz" id="xhq-DN-cif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beer2" width="419" height="1600"/>
+    </resources>
+</document>
