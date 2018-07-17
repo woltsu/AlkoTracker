@@ -4,7 +4,9 @@ AlkoTracker works like a compass, but the destination is the nearest Alko from y
 ### Instructions  
 1. Clone the project
 2. Install CocoaPods
-3. Run `pod install` in the root of the project
-4. Run project from the created workspace
+3. Create a property list called Keys.plist into /AlkoTracker/AlkoTracker with a pair `API_KEY: your google api key`
+   * You can get the api key from [google developer console](https://developers.google.com/maps/documentation/embed/get-api-key)
+4. Run `pod install` in the root of the project
+5. Run project from the created workspace
 
 ![AlkoTracker gif](AlkoTracker.gif)
